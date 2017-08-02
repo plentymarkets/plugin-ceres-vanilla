@@ -14,6 +14,7 @@
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
+    "require"           : ["Ceres"],
     "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
     "dataProviders"     :
     [
