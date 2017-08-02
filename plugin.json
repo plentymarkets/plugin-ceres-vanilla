@@ -7,6 +7,7 @@
     "authorIcon"        :   "icon_author_xs.png",
     "email"             :   "sales@plentymarkets.com",
     "phone"             :   "+49 561 98 681 100",
+    "description"       :   "A Vanilla theme for Ceres.",
     "shortDescription"  :   { "de": "Ein Vanilla-Theme für Ceres.", "en": "A Vanilla theme for Ceres." },
     "namespace"         :   "CeresVanilla",
     "author"            :   "plentymarkets GmbH",
@@ -14,7 +15,7 @@
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
-    "require"           : ["Ceres"],
+    "require"           :   ["Ceres"],
     "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
     "dataProviders"     :
     [
