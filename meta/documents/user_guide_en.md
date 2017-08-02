@@ -44,4 +44,4 @@ After installing and deploying the plugin, enter your own CSS in the plugin deta
 
 ## License
 
-This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. – find further information in the [LICENSE](https://github.com/plentymarkets/plugin-ceres-vanilla/blob/stable/LICENSE).
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. – find further information in the [LICENSE](https://github.com/plentymarkets/plugin-ceres-vanilla/blob/master/LICENSE).
