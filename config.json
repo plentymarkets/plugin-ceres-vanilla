@@ -27,7 +27,6 @@
             "page_not_found"            : "Page not found",
             "category_content"          : "Content category template",
             "category_item"             : "Item category template"
-        },
-        "default"                       : "all"
+        }
     }
 ]
