@@ -1,0 +1,33 @@
+[
+    {
+        "tab"                           : "Templates",
+        "key"                           : "templates.override",
+        "label"                         : "Override partials and templates",
+        "type"                          : "multi_select",
+        "possibleValues"                :
+        {
+            "page_design"               : "Page design",
+            "head"                      : "Head",
+            "header"                    : "Header",
+            "footer"                    : "Footer",
+            "homepage"                  : "Homepage",
+            "basket"                    : "Shopping cart",
+            "checkout"                  : "Checkout",
+            "order_confirmation"        : "Order confirmation",
+            "login"                     : "Login",
+            "register"                  : "Register",
+            "item"                      : "Single item view",
+            "category_view"             : "Category item view",
+            "my_account"                : "My account",
+            "cancellation_rights"       : "Cancellation rights",
+            "legal_disclosure"          : "Legal disclosure",
+            "privacy_policy"            : "Privacy policy",
+            "terms_conditions"          : "Terms and conditions",
+            "item_not_found"            : "Item not found",
+            "page_not_found"            : "Page not found",
+            "category_content"          : "Content category template",
+            "category_item"             : "Item category template"
+        },
+        "default"                       : "all"
+    }
+]

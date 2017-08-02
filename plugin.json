@@ -1,0 +1,41 @@
+{
+    "version"           :   "0.0.1",
+    "license"           :   "AGPL-3.0",
+    "name"              :   "CeresVanilla",
+    "marketplaceName"   :   {"de":"Ceres Vanilla","en":"Ceres Vanilla"},
+    "pluginIcon"        :   "icon_plugin_xs.png",
+    "authorIcon"        :   "icon_author_xs.png",
+    "email"             :   "sales@plentymarkets.com",
+    "phone"             :   "+49 561 98 681 100",
+    "shortDescription"  :   { "de": "Ein Vanilla-Theme für Ceres.", "en": "A Vanilla theme for Ceres." },
+    "namespace"         :   "CeresVanilla",
+    "author"            :   "plentymarkets GmbH",
+    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
+    "price"             :   0,
+    "categories"        :   [3518],
+    "type"              :   "theme",
+    "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
+    "dataProviders"     :
+    [
+        {
+            "key"           :"CeresVanilla\\Containers\\CeresVanillaContainer",
+            "name"          :"Stylesheet",
+            "description"   :"Add changes to the CSS file"
+        },
+        {
+            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer1",
+            "name"          :"First item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer2",
+            "name"          :"Second item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer3",
+            "name"          :"Third item list",
+            "description"   :"Display a configurable list of items in your online store"
+        }
+    ]
+}
