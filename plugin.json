@@ -9,33 +9,33 @@
     "phone"             :   "*",
     "description"       :   "A Badtrends theme for Ceres.",
     "shortDescription"  :   { "de": "Ein Badtrends-Theme für Ceres.", "en": "A Badtrends theme for Ceres." },
-    "namespace"         :   "CeresVanilla-Badtrends",
+    "namespace"         :   "CeresVanillaBadtrends",
     "author"            :   "Steven Resch",
     "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
     "require"           :   ["Ceres"],
-    "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
+    "serviceProvider"   :   "CeresVanillaBadtrends\\Providers\\CeresVanillaServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaContainer",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaContainer",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer1",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer2",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer2",
             "name"          :"Second item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer3",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer3",
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         }
