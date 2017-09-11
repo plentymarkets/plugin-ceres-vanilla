@@ -16,26 +16,26 @@
     "categories"        :   [3518],
     "type"              :   "theme",
     "require"           :   ["Ceres"],
-    "serviceProvider"   :   "CeresVanillaBadtrends\\Providers\\CeresVanillaServiceProvider",
+    "serviceProvider"   :   "CeresVanillaBadtrends\\Providers\\CeresVanillaBadtrendsServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaContainer",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaBadtrendsContainer",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
         },
         {
-            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer1",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaBadtrendsItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer2",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaBadtrendsItemListContainer2",
             "name"          :"Second item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaItemListContainer3",
+            "key"           :"CeresVanillaBadtrends\\Containers\\CeresVanillaBadtrendsItemListContainer3",
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         }
