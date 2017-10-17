@@ -46,3 +46,6 @@ a {
 .sidebar-categories ul li.active > a {
     background: #7EA93A;
 }
+.section-header {
+	background: #1b1b1b;
+}
