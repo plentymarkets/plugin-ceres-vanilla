@@ -87,6 +87,58 @@
                 </div>
             {% endfor %}
             <hr class="hidden-sm-up m-y-2">
+			<!-- Eigene -->
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Finde uns</h5>
+				<div class="socialmedia">
+					<a href="https://www.facebook.com/Four.and.More.net" target="_blank"> <i class="fa fa-facebook-official fa-2x"></i> </a>
+					<a href="https://twitter.com/fourmoregmbh" target="_blank"> <i class="fa fa-twitter-square fa-2x"></i> </a>
+					<a href="https://www.instagram.com/fourandmoregmbh" target="_blank"> <i class="fa fa-instagram fa-2x"></i> </a>
+					<a href="https://www.youtube.com/channel/UCLhVPh8GdZJgnjSWqC4eR_w" target="_blank"> <i class="fa fa-youtube-square fa-2x"></i> </a>
+				</div>
+			</div>
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Kundenmeinungen</h5>
+				<!-- eKomiWidget START -->
+				<div id="eKomiWidget_default">&nbsp;</div>
+				<!-- eKomiWidget END -->
+				<!-- eKomiLoader START, only needed once per page -->
+				<script type="text/javascript">
+					(function () {
+						eKomiIntegrationConfig = new Array({
+							certId: '3C34A3F04886F2B'
+						});
+						if (typeof eKomiIntegrationConfig != "undefined") {
+							for (var eKomiIntegrationLoop = 0; eKomiIntegrationLoop < eKomiIntegrationConfig.length; eKomiIntegrationLoop++) {
+								var eKomiIntegrationContainer = document.createElement('script');
+								eKomiIntegrationContainer.type = 'text/javascript';
+								eKomiIntegrationContainer.defer = true;
+								eKomiIntegrationContainer.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//connect.ekomi.de/integration_1425974570/" + eKomiIntegrationConfig[eKomiIntegrationLoop].certId + ".js";
+								document.getElementsByTagName("head")[0].appendChild(eKomiIntegrationContainer);
+							}
+						}
+						else {
+							if ('console' in window) {
+								console.error('connectEkomiIntegration - Cannot read eKomiIntegrationConfig');
+							}
+						}
+					})();
+				</script>
+				<!-- eKomiLoader END, only needed once per page -->
+			</div>
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Wir sind Partner</h5> <img src="/images/gt_weiss_blau_xs.jpg" style="width: 79px; margin-left:3px; margin-bottom: 5px; -moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px;border-radius: 5px;">
+				<!--  billiger.de Partner button with Shop reviews -->
+				<div style="width:130px;">
+					<link type="text/css" href="//www.billiger.de/css/partnerbutton.css" rel="stylesheet" />
+					<div id="bde_shopreview" style="padding:0 !important; background-color: #1b1b1b !important; margin: 0px !important; text-align: left !important;">
+						<a href="http://www.billiger.de/show/kategorie/100162.htm" target="_blank"><img src="//img.billiger.de/billiger/partner/billigerde_pb.png" width="88" height="59" border="0" alt="Haushalt und Wohnen bei billiger.de" title="Haushalt und Wohnen bei billiger.de" /></a>
+						<script language="javascript" src="//www.billiger.de/pb/pwhp-sUIIg2ymAgX9jAcBed4BFm6pH3rA"></script>
+					</div>
+				</div>
+				<!--  / billiger.de Partner button with Shop reviews -->
+			</div>
+			<!-- End Eigene -->
             <div class="col-xs-6 col-sm-3">
                 <div class="footer-column">
                     {{ LayoutContainer.show("Ceres::Footer.RowOne") }}
