@@ -12,7 +12,7 @@
         <i class="fa fa-chevron-up"></i>
     </div>
 
-    <div id="to-top" class="to-top hidden-md-up">
+    <div class="to-top hidden-md-up" v-scroll-to-top>
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
 
@@ -95,43 +95,38 @@
             <div class="col-sm-12 col-lg-3">
                 <div class="footer-column row">
                     {% set rowTwo = LayoutContainer.show("Ceres::Footer.RowTwo") %}
-
+                    
                     {{ rowTwo }}
 
                     {% if rowTwo|trim is not empty %}
                     <div class="col-xs-12 col-sm-6 col-lg-12">
-                        {% else %}
-                        <div class="col-xs-12">
-                            {% endif %}
-
-                            {{ LayoutContainer.show("Ceres::Footer.RowThree") }}
-                        </div>
+                    {% else %}
+                    <div class="col-xs-12">
+                    {% endif %}
+                        {{ LayoutContainer.show("Ceres::Footer.RowThree") }}
                     </div>
                 </div>
-
-                <hr class="m-b-0">
-
             </div>
+        </div>            
 
-            {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
-            <div class="copyright text-xs-center m-y-1">
-                <div class="static-link-list">
-                    {% autoescape false %}
-                        <a href="/cancellation-rights">{{ trans("Ceres::Template.generalCancellationRight") }}</a>
-                        <a href="/legal-disclosure">{{ trans("Ceres::Template.generalLegalDisclosure") }}</a>
-                        <a href="/privacy-policy">{{ trans("Ceres::Template.generalPrivacyPolicy") }}</a>
-                        <a href="/gtc">{{ trans("Ceres::Template.generalGtc") }}</a>
-                        {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
-                            <a href="/contact">{{ trans("Ceres::Template.generalContact") }}</a>
-                        {% endif %}
-                    {% endautoescape %}
-                </div>
-                <a href="https://www.plentymarkets.eu">
-                    <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg">
-                </a>
-                <br>
-                <small>&copy; Copyright 2017 | {{ trans("Ceres::Template.generalAllRightsReserved") }}</small>
+        {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
+        <div class="copyright text-xs-center m-y-1">
+            <div class="static-link-list">
+                {% autoescape false %}
+                    <a href="/cancellation-rights">{{ trans("Ceres::Template.generalCancellationRight") }}</a>
+                    <a href="/legal-disclosure">{{ trans("Ceres::Template.generalLegalDisclosure") }}</a>
+                    <a href="/privacy-policy">{{ trans("Ceres::Template.generalPrivacyPolicy") }}</a>
+                    <a href="/gtc">{{ trans("Ceres::Template.generalGtc") }}</a>
+                    {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
+                        <a href="/contact">{{ trans("Ceres::Template.generalContact") }}</a>
+                    {% endif %}
+                {% endautoescape %}
             </div>
+            <a href="https://www.plentymarkets.eu">
+                <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg">
+            </a>
+            <br>
+            <small>&copy; Copyright 2017 | {{ trans("Ceres::Template.generalAllRightsReserved") }}</small>
         </div>
     </div>
 </div>
