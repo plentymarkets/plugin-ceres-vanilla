@@ -1,0 +1,121 @@
+{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %} {% set numberOfCols = config('Ceres.footer.number_of_cols') %} {% set colSize = (12 / (numberOfCols + 1)) %} {% set displayedCategories = [] %} {% set numberOfFeatures = config('Ceres.footer.number_of_features') %} {% set topButtonPosition = config('Ceres.footer.to_top_button') %}
+<div class="footer">
+	<div class="{% if topButtonPosition == " right " %}back-to-top{% else %}back-to-top-center{% endif %} hidden-sm-down"> <i class="fa fa-chevron-up"></i> </div>
+	<div id="to-top" class="to-top hidden-md-up"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </div> {% if numberOfFeatures > 0 %}
+	<div class="footer-features p-y-1 container-max">
+		<div class="row"> {% for i in 1..numberOfFeatures %}
+			<div class="col-xs-12 col-sm-4 text-xs-center"> <i class="fa fa-check text-success" aria-hidden="true"></i> {{ config('Ceres.footer.store_feature_' ~ i) }} </div> {% endfor %} </div>
+	</div> {% endif %}
+	<div class="container-max footer-content">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="footer-services m-t-2"> {% set paymentMethodContent = LayoutContainer.show("Ceres::Homepage.PaymentMethods") %} {% if paymentMethodContent|trim is not empty %}
+					<div class="services-payment m-b-1"> <strong class="services-title">{{ trans("Ceres::Template.orderPaymentMethods") }}</strong> {{ paymentMethodContent }} </div> {% endif %} {% set shippingContent = LayoutContainer.show("Ceres::Homepage.Shipping") %} {% if shippingContent|trim is not empty %}
+					<div class="services-shipping m-b-1"> <strong class="services-title">{{ trans("Ceres::Template.generalOrderShippedBy") }}</strong> {{ shippingContent }} </div> {% endif %} {% set certifiedContent = LayoutContainer.show("Ceres::Homepage.Certified") %} {% if certifiedContent|trim is not empty %}
+					<div class="services-certificate m-b-1"> <strong class="services-title">{{ trans("Ceres::Template.generalCertifiedBy") }}</strong> {{ certifiedContent }} </div> {% endif %} </div>
+			</div>
+		</div>
+		<div class="row">
+			<hr class="m-y-2"> {% for i in 1..numberOfCols %}
+			<div class="col-xs-6 col-sm-3 col-lg-2">
+				<nav class="footer-column m-b-2">
+					<h5>{{ config('Ceres.footer.col_' ~ i ~ '_title') }}</h5>
+					<ul class="list-unstyled"> {% set footerCategories = config('Ceres.footer.col_' ~ i ~ '_categories') | find("[0-9]+") %} {% for catID in footerCategories %} {% set cat = services.category.get(catID, lang) %} {% if cat is not null %} {% set displayedCategories = displayedCategories | merge([catID]) %}
+						<li> <a href="{{ services.category.getURL( cat ) }}">
+                                            {{ cat.details.first.name }}</a> </li> {% endif %} {% endfor %} </ul>
+				</nav>
+			</div> {% endfor %}
+			<hr class="hidden-sm-up m-y-2">
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Finde uns</h5>
+				<div class="socialmedia">
+					<a href="https://www.facebook.com/Four.and.More.net" target="_blank"> <i class="fa fa-facebook-official fa-2x"></i> </a>
+					<a href="https://twitter.com/fourmoregmbh" target="_blank"> <i class="fa fa-twitter-square fa-2x"></i> </a>
+					<a href="https://www.instagram.com/fourandmoregmbh" target="_blank"> <i class="fa fa-instagram fa-2x"></i> </a>
+					<a href="https://www.youtube.com/channel/UCLhVPh8GdZJgnjSWqC4eR_w" target="_blank"> <i class="fa fa-youtube-square fa-2x"></i> </a>
+				</div>
+			</div>
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Kundenmeinungen</h5>
+				<!-- eKomiWidget START -->
+				<div id="eKomiWidget_default">&nbsp;</div>
+				<!-- eKomiWidget END -->
+				<!-- eKomiLoader START, only needed once per page -->
+				<script type="text/javascript">
+					(function () {
+						eKomiIntegrationConfig = new Array({
+							certId: '3C34A3F04886F2B'
+						});
+						if (typeof eKomiIntegrationConfig != "undefined") {
+							for (var eKomiIntegrationLoop = 0; eKomiIntegrationLoop < eKomiIntegrationConfig.length; eKomiIntegrationLoop++) {
+								var eKomiIntegrationContainer = document.createElement('script');
+								eKomiIntegrationContainer.type = 'text/javascript';
+								eKomiIntegrationContainer.defer = true;
+								eKomiIntegrationContainer.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//connect.ekomi.de/integration_1425974570/" + eKomiIntegrationConfig[eKomiIntegrationLoop].certId + ".js";
+								document.getElementsByTagName("head")[0].appendChild(eKomiIntegrationContainer);
+							}
+						}
+						else {
+							if ('console' in window) {
+								console.error('connectEkomiIntegration - Cannot read eKomiIntegrationConfig');
+							}
+						}
+					})();
+				</script>
+				<!-- eKomiLoader END, only needed once per page -->
+			</div>
+			<div class=" col-xs-6 col-sm-3 col-lg-2">
+				<h5>Wir sind Partner</h5> <img src="/images/gt_weiss_blau_xs.jpg" style="width: 79px; margin-left:3px; margin-bottom: 5px; -moz-border-radius: 5px;-webkit-border-radius: 5px;-khtml-border-radius: 5px;border-radius: 5px;">
+				<!--  billiger.de Partner button with Shop reviews -->
+				<div style="width:130px;">
+					<link type="text/css" href="//www.billiger.de/css/partnerbutton.css" rel="stylesheet" />
+					<div id="bde_shopreview" style="padding:0 !important; background-color: #1b1b1b !important; margin: 0px !important; text-align: left !important;">
+						<a href="http://www.billiger.de/show/kategorie/100162.htm" target="_blank"><img src="//img.billiger.de/billiger/partner/billigerde_pb.png" width="88" height="59" border="0" alt="Haushalt und Wohnen bei billiger.de" title="Haushalt und Wohnen bei billiger.de" /></a>
+						<script language="javascript" src="//www.billiger.de/pb/pwhp-sUIIg2ymAgX9jAcBed4BFm6pH3rA"></script>
+					</div>
+				</div>
+				<!--  / billiger.de Partner button with Shop reviews -->
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<div class="footer-column"> {{ LayoutContainer.show("Ceres::Footer.RowOne") }} </div>
+			</div>
+			<div class="col-sm-12 col-lg-3">
+				<div class="footer-column row"> {% set rowTwo = LayoutContainer.show("Ceres::Footer.RowTwo") %} {{ rowTwo }} {% if rowTwo|trim is not empty %}
+					<div class="col-xs-12 col-sm-6 col-lg-12"> {% else %}
+						<div class="col-xs-12"> {% endif %} {{ LayoutContainer.show("Ceres::Footer.RowThree") }} </div>
+					</div>
+				</div>
+				<hr class="m-b-0"> </div> {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
+			<div class="copyright text-xs-center m-y-1">
+				<!-- div class="static-link-list">
+                    {% autoescape false %}
+                        <a href="/cancellation-rights">{{ trans("Ceres::Template.generalCancellationRight") }}</a>
+                        <a href="/legal-disclosure">{{ trans("Ceres::Template.generalLegalDisclosure") }}</a>
+                        <a href="/privacy-policy">{{ trans("Ceres::Template.generalPrivacyPolicy") }}</a>
+                        <a href="/gtc">{{ trans("Ceres::Template.generalGtc") }}</a>
+                        {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
+                            <a href="/contact">{{ trans("Ceres::Template.generalContact") }}</a>
+                        {% endif %}
+                    {% endautoescape %}
+                </div-->
+				<a href="https://www.bad-trends.de"> <img alt="Four & More GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('CeresVanillaBadtrends') }}/images/bad-trends_logo.png"> </a>
+				<br> <small>Made with Plentymarkets and 💖.</small>
+				<br> <small>&copy; Copyright 2017 Four & More GmbH Sinsheim. | {{ trans("Ceres::Template.generalAllRightsReserved") }}</small> </div>
+		</div>
+	</div>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}
+			, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script")
+				, s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/57a44727b21680ea5042b009/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
+</div>
