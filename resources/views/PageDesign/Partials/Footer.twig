@@ -111,7 +111,7 @@
 
         {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
         <div class="copyright text-xs-center m-y-1">
-            <div class="static-link-list">
+            <!-- div class="static-link-list">
                 {% autoescape false %}
                     <a href="/cancellation-rights">{{ trans("Ceres::Template.generalCancellationRight") }}</a>
                     <a href="/legal-disclosure">{{ trans("Ceres::Template.generalLegalDisclosure") }}</a>
@@ -121,12 +121,10 @@
                         <a href="/contact">{{ trans("Ceres::Template.generalContact") }}</a>
                     {% endif %}
                 {% endautoescape %}
-            </div>
-            <a href="https://www.plentymarkets.eu">
-                <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg">
-            </a>
-            <br>
-            <small>&copy; Copyright 2017 | {{ trans("Ceres::Template.generalAllRightsReserved") }}</small>
+            </div-->
+            <a href="https://www.bad-trends.de"> <img alt="Four & More GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('CeresVanillaBadtrends') }}/images/bad-trends_logo.png"> </a>
+				<br> <small>Made with Plentymarkets and 💖.</small>
+				<br> <small>&copy; Copyright 2017 Four & More GmbH Sinsheim. | {{ trans("Ceres::Template.generalAllRightsReserved") }}</small>
         </div>
     </div>
 </div>
