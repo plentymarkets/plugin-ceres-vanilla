@@ -1,9 +1,13 @@
 <!-- Insert markup for navigation list here -->
-<!-- Insert markup for navigation list here -->
-{% import "Ceres::Category.Macros.CategoryTree" as Tree %}
-
-{% set lang = services.sessionStorage.getLang() %}
-
-<ul class="mainmenu pull-lg-right">
-    {{ Tree.get_nav_bar(categories, "") }} <li class="ddown">Test1</li>
+<!-- Insert markup for navigation list here -->{% import "Ceres::Category.Macros.CategoryTree" as Tree %} {% set lang = services.sessionStorage.getLang() %}
+<ul class="mainmenu pull-lg-right"> {{ Tree.get_nav_bar(categories, "") }}
+	<li class="ddown"><a href="#">Sonstiges</a> <span data-toggle="collapse" href="#navDropdown1" aria-expanded="false" class="hidden-lg-up nav-direction"><i aria-hidden="true" class="fa fa-caret-down"></i></span>
+		<ul data-level="1" id="navDropdown1" class="collapse">
+			<li><a href="#">Test 1</a></li>
+			<li><a href="#">Test 2</a></li>
+			<li><a href="#">Test 3</a></li>
+			<li><a href="#">Test 4</a></li>
+			<li><a href="#">Test 5</a></li>
+		</ul>
+	</li>
 </ul>
