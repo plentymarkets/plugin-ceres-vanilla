@@ -54,3 +54,6 @@ a {
 .anicon.anicon-search-xcross[aria-expanded="false"]:hover > .anicon-search-item::after {
 	background: #7EA93A;
 }
+.top-bar .controls-list .control-user #login-change > .dropdown .dropdown-menu a:hover {
+	background: #7EA93A;
+}
