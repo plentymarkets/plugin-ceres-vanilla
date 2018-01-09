@@ -51,3 +51,6 @@ a {
 .section-header {
 	background: #1b1b1b;
 }
+.anicon.anicon-search-xcross[aria-expanded="false"]:hover > .anicon-search-item::after {
+	background: #7EA93A;
+}
