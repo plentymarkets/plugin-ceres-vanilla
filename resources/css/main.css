@@ -46,10 +46,10 @@ a {
 	background: #ffffff;
 }
 .top-bar .controls-list li a:hover{
-	background: #7EA93A;
+	background: #7EA93A!important;
 }
 .top-bar .controls-list>li a:hover(.btn) {
-	background: #7EA93A;
+	background: #7EA93A!important;
 }
 .sidebar-categories ul li.active > a {
     background: #7EA93A;
