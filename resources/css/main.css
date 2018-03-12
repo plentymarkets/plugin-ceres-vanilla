@@ -45,6 +45,9 @@ a {
 .wrapper-main .navbar {
 	background: #ffffff;
 }
+.top-bar .controls-list li a:hover{
+	background: #7EA93A;
+}
 .sidebar-categories ul li.active > a {
     background: #7EA93A;
 }
