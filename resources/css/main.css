@@ -48,6 +48,9 @@ a {
 .top-bar .controls-list li a:hover{
 	background: #7EA93A;
 }
+.top-bar .controls-list>li a:hover(.btn) {
+	background: #7EA93A;
+}
 .sidebar-categories ul li.active > a {
     background: #7EA93A;
 }
