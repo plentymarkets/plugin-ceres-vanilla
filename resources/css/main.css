@@ -45,12 +45,14 @@ a {
 .wrapper-main .navbar {
 	background: #ffffff;
 }
+
 ul.mainmenu > li:hover {
 	background: #7EA93A!important;
 }
 ul.mainmenu > li > ul > li:hover {
 	background: #7EA93A!important;
 }
+
 .top-bar .controls-list li a:hover{
 	background: #7EA93A!important;
 }
