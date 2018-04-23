@@ -2,7 +2,7 @@
 
 ![ses Logo](https://www.ses-shop.ch/layout/callisto/img/led-logo-ses-store.png)
 
-# SES Vanilla Theme
+# SES AG CeresVanilla Theme
 
 A customized Vanilla theme for Ceres.
 
@@ -34,4 +34,3 @@ Visit our forum and find the latest news and updates in our [Changelog](https://
 ## License
 
 This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE - see the [LICENSE](/LICENSE) file for details.
-
