@@ -1,10 +1,10 @@
 
 
-![plentymarkets Logo](http://www.plentymarkets.eu/layout/pm/images/logo/plentymarkets-logo.jpg)
+![ses Logo](https://www.ses-shop.ch/layout/callisto/img/led-logo-ses-store.png)
 
-# CeresVanilla
+# SES Vanilla Theme
 
-A Vanilla theme for Ceres.
+A customized Vanilla theme for Ceres.
 
 
 ## Requirements
