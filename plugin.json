@@ -10,7 +10,7 @@
     "description"       :   "SES theme for Ceres.",
     "shortDescription"  :   { "de": "SES Theme für Ceres.", "en": "SES theme for Ceres." },
     "namespace"         :   "CeresVanilla",
-    "author"            :   "SES-AG",
+    "author"            :   "SES AG",
     "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ses"],
     "price"             :   0,
     "categories"        :   [3518],
