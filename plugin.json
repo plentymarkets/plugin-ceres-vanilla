@@ -1,41 +1,41 @@
 {
     "version"           :   "0.0.1",
     "license"           :   "AGPL-3.0",
-    "name"              :   "CeresVanilla",
-    "marketplaceName"   :   {"de":"Ceres Vanilla","en":"Ceres Vanilla"},
+    "name"              :   "SESVanilla",
+    "marketplaceName"   :   {"de":"Ceres SES Theme","en":"Ceres SES Theme"},
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
     "email"             :   "sales@plentymarkets.com",
     "phone"             :   "+49 561 98 681 100",
-    "description"       :   "A Vanilla theme for Ceres.",
-    "shortDescription"  :   { "de": "Ein Vanilla-Theme für Ceres.", "en": "A Vanilla theme for Ceres." },
-    "namespace"         :   "CeresVanilla",
-    "author"            :   "plentymarkets GmbH",
-    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
+    "description"       :   "SES theme for Ceres.",
+    "shortDescription"  :   { "de": "SES-Theme für Ceres.", "en": "SES theme for Ceres." },
+    "namespace"         :   "SESVanilla",
+    "author"            :   "SES AG",
+    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ses"],
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
     "require"           :   ["Ceres"],
-    "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
+    "serviceProvider"   :   "SESVanilla\\Providers\\CeresVanillaServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaContainer",
+            "key"           :"SESVanilla\\Containers\\CeresVanillaContainer",
             "name"          :"Stylesheet",
             "description"   :"Add changes to the CSS file"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer1",
+            "key"           :"SESVanilla\\Containers\\CeresVanillaItemListContainer1",
             "name"          :"First item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer2",
+            "key"           :"SESVanilla\\Containers\\CeresVanillaItemListContainer2",
             "name"          :"Second item list",
             "description"   :"Display a configurable list of items in your online store"
         },
         {
-            "key"           :"CeresVanilla\\Containers\\CeresVanillaItemListContainer3",
+            "key"           :"SESVanilla\\Containers\\CeresVanillaItemListContainer3",
             "name"          :"Third item list",
             "description"   :"Display a configurable list of items in your online store"
         }
