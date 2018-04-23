@@ -1,7 +1,7 @@
 {
     "version"           :   "0.0.2",
     "license"           :   "AGPL-3.0",
-    "name"              :   "CeresVanilla",
+    "name"              :   "SES Theme",
     "marketplaceName"   :   {"de":"SES Theme Ceres","en":"SES Theme Ceres"},
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
