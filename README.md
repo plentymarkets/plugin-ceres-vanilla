@@ -4,7 +4,7 @@
 
 # SES AG CeresVanilla Theme
 
-A customized Vanilla theme for Ceres.
+A customized theme for Ceres.
 
 
 ## Requirements

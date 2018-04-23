@@ -1,1 +1,7 @@
-<!-- Insert markup for navigation list here -->
+{% import "Ceres::Category.Macros.CategoryTree" as Tree %}
+
+{% set lang = services.sessionStorage.getLang() %}
+
+<ul class="mainmenu pull-lg-right">
+    {{ Tree.get_nav_bar(categories, "") }}
+</ul>
