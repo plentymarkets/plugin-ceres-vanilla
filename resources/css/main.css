@@ -23,3 +23,6 @@ nav.navbar.megamenu{
 .anicon.anicon-search-xcross[aria-expanded="true"] > .anicon-search-item:before{
   width: 15px;
 }
+.cmp-search-box .search-box-inner{
+  padding: 1.6rem 0em;
+}
