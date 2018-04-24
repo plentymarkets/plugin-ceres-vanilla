@@ -1,16 +1,20 @@
 img{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .top-bar {
-    background-color: #adb617;
-    box-shadow: 0;
+  background-color: #adb617;
+  box-shadow: none;
 }
 
 .wrapper-main .navbar {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 nav.navbar.megamenu{
-    padding: 10px 0;  
+  padding: 10px 0;
+}
+
+.cmp-search-box{
+  background: #adb617;
 }
