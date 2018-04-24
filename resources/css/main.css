@@ -5,5 +5,8 @@
 
 .wrapper-main .navbar {
     background: #ffffff;
-    padding: 10px 0;
+}
+
+nav.navbar.megamenu{
+  padding: 10px 0;  
 }
