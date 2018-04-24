@@ -1,20 +1,22 @@
 img{
   max-width: 100%;
 }
-
 .top-bar {
   background-color: #adb617;
   box-shadow: none;
 }
-
 .wrapper-main .navbar {
   background: #ffffff;
 }
-
 nav.navbar.megamenu{
   padding: 10px 0;
 }
-
 .cmp-search-box{
   background: #adb617;
+}
+.anicon > .anicon-search-item:before{
+  width: 7px;
+}
+.anicon.anicon-search-xcross[aria-expanded="true"] > .anicon-search-item:before{
+  width: 15px;
 }
