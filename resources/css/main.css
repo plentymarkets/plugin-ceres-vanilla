@@ -17,6 +17,9 @@ nav.navbar.megamenu{
 .anicon > .anicon-search-item:before{
   width: 7px;
 }
+.anicon > .anicon-search-item:after{
+  background: none;
+}
 .anicon.anicon-search-xcross[aria-expanded="true"] > .anicon-search-item:before{
   width: 15px;
 }
