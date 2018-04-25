@@ -9,8 +9,7 @@
     </div>
 
     <div class="filter-wrapper" v-show="facets && facets.length > 0">
-
-
+      {{ component( "CeresVanilla::ItemList.Components.Filter.ItemFilter") }}
         <div class="collapse" :class="{in: isActive}" id="filterCollapse">
             <div class="container-max page-content">
                 <div class="card-columns">
