@@ -37,16 +37,6 @@
                                 template="#vue-items-per-page"
                                 :pagination-values="{{ searchOptions.itemsPerPage | json_encode }}"></items-per-page>
                             <item-filter-list :facet-data="{{ facets | json_encode }}"></item-filter-list>
-                            {% if ceresConfig.pagination.position in ['top', 'top_bottom'] %}
-                                <div class="list-controls m-b-3 row">
-                                    <div class="col-xs-12">
-                                        <pagination template="#vue-pagination"></pagination>
-                                        <noscript>
-                                            {% include "Ceres::Category.Item.Partials.Pagination" %}
-                                        </noscript>
-                                    </div>
-                                </div>
-                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -55,6 +45,17 @@
             {# TAGS #}
             <item-filter-tag-list></item-filter-tag-list>
         </div>
+
+        {% if ceresConfig.pagination.position in ['top', 'top_bottom'] %}
+            <div class="list-controls m-b-3 row">
+                <div class="col-xs-12">
+                    <pagination template="#vue-pagination"></pagination>
+                    <noscript>
+                        {% include "Ceres::Category.Item.Partials.Pagination" %}
+                    </noscript>
+                </div>
+            </div>
+        {% endif %}
 
         <div class="row">
 

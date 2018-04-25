@@ -44,28 +44,3 @@ nav.navbar.megamenu{
   font-size: 1.5rem;
   font-weight: 300
 }
-/*
-.filter-wrapper {
-  position: relative;
-  display: inline-block;
-  padding: 0.5em;
-}
-.list-controls .filter-toggle {
-  position: relative;
-  top: auto;
-  right: auto;
-  text-decoration: none;
-  background: #fff;
-  width: 100%;
-  padding: 0.7em;
-  display: inline-block;
-  max-width: 100%;
-  color: #7a7f7f;
-  vertical-align: middle;
-  border-radius: 0.1rem;
-     -moz-appearance: none;
-  -webkit-appearance: none;
-   -webkit-transform: none;
-           transform: none;
-}
-/*
