@@ -27,7 +27,7 @@ nav.navbar.megamenu{
   padding: 2rem 0em;
 }
 .category-description{
-  font-weight: 200;
+  font-weight: 200 !important;
 }
 .category-description h1,
 .category-description h2{
