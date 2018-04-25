@@ -12,6 +12,9 @@
     {{ component( "Ceres::ItemList.Components.ItemsPerPage") }}
     {{ component( "Ceres::ItemList.Components.Pagination") }}
 
+    {% if ceresConfig.item.showCategoryImage %}
+        {% include "CeresVanilla::Category.Item.Partials.CategoryParallaxImage" with { 'category': category } %}
+    {% endif %}
 
     <div class="categoriegrid page-content container-max">
         {% if not ceresConfig.item.showCategoryImage %}
