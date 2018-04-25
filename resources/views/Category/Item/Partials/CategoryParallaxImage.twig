@@ -1,0 +1,13 @@
+<div class="parallax-img-container"{% if category.details[0].imagePath is not empty %} style="background-image: url(/documents/{{ category.details[0].imagePath }});"{% endif %}>
+    <div class="container-max">
+        <div class="parallax-text-wrapper">
+            <div class="parallax-text-container">
+                <h1 class="h2 p-t-2 category-title">{{ category.details[0].name | raw }}</h1>
+
+                {% if ceresConfig.item.showCategoryDescription %}
+                    <div id="category-description-container" class="category-description m-b-1">{{ category.details[0].description | raw }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
