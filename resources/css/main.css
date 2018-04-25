@@ -1,11 +1,11 @@
 img{
   max-width: 100%;
 }
-.top-bar {
+.top-bar{
   background-color: #adb617;
   box-shadow: none;
 }
-.wrapper-main .navbar {
+.wrapper-main .navbar{
   background: #ffffff;
 }
 nav.navbar.megamenu{
@@ -25,4 +25,17 @@ nav.navbar.megamenu{
 }
 .cmp-search-box .search-box-inner{
   padding: 2rem 0em;
+}
+
+.category-description{
+  font-weight: 200;
+}
+
+.category-description h1,
+.category-description h2{
+  font-size: 4rem;
+}
+
+.category-description p{
+  font-size: 1.5rem;
 }
