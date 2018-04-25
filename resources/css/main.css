@@ -44,6 +44,7 @@ nav.navbar.megamenu{
   font-size: 1.5rem;
   font-weight: 300
 }
+/*
 .filter-wrapper {
   position: relative;
   display: inline-block;
@@ -67,3 +68,4 @@ nav.navbar.megamenu{
    -webkit-transform: none;
            transform: none;
 }
+/*
