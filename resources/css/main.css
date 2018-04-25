@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 html, body{
   font-family: 'Roboto', sans-serif;
 }
@@ -35,8 +35,8 @@ nav.navbar.megamenu{
 }
 .category-description h1,
 .category-description h2{
-  font-size: 4rem;
-  font-weight: 200
+  font-size: 200%;
+  font-weight: 100
 }
 .category-description p{
   font-size: 1.5rem;
