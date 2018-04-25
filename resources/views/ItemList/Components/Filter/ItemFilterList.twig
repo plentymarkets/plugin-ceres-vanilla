@@ -1,1 +1,25 @@
-<!-- Insert markup for item filter list here -->
+<script type="x/template" id="vue-item-filter-list">
+    <div class="filter-wrapper" v-show="facets && facets.length > 0">
+        {{ component( "Ceres::ItemList.Components.Filter.ItemFilter") }}
+
+        <a class="btn btn-link filter-toggle" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse" @click="toggleOpeningState()">
+            <i class="fa fa-sliders default-float" aria-hidden="true"></i> {{ trans("Ceres::Template.generalFilter") }}
+        </a>
+
+        <div class="collapse" :class="{in: isActive}" id="filterCollapse">
+            <div class="container-max page-content">
+                <div class="card-columns">
+                    <item-filter v-for="facet in facets" :facet="facet" :key="facet.id"></item-filter>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 text-xs-right">
+                        <button type="button" class="btn btn-primary btn-medium" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse" @click="toggleOpeningState()">
+                            <i class="fa fa-times" aria-hidden="true"></i> {{ trans("Ceres::Template.generalClose") }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

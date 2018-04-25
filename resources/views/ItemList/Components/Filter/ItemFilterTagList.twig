@@ -1,1 +1,7 @@
-<!-- Insert markup for item filter tag list here -->
+<script type="x/template" id="vue-item-filter-tag-list">
+    <div class="selected-filters clearfix">
+        <span :class="'selected-filter filter-' + tag.id" v-for="tag in tagList" @click="removeTag(tag)">
+            <i class="fa fa-times" aria-hidden="true"></i> ${ tag.name }
+        </span>
+    </div>
+</script>

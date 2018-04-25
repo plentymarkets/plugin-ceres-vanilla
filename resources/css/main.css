@@ -47,8 +47,7 @@ nav.navbar.megamenu{
 .filter-wrapper {
   position: relative;
   display: inline-block;
-  background: #fff;
-  padding: 0.5em 1em;
+  padding: 0.5em;
 }
 .list-controls .filter-toggle {
   position: relative;
