@@ -2,7 +2,7 @@
     "version"           :   "2.10.0",
     "license"           :   "AGPL-3.0",
     "name"              :   "CeresVanillaBadtrends",
-    "marketplaceName"   :   {"de":"Ceres VanillaBadtrends","en":"Ceres VanillaBadtrends"},
+    "marketplaceName"   :   {"de":"CeresVanillaBadtrends","en":"CeresVanillaBadtrends"},
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
     "email"             :   "steven.resch@four-and-more.net",
