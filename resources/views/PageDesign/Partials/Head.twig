@@ -1,1 +1,85 @@
 <!-- Insert markup for head here -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% set lang = services.sessionStorage.getLang() %}
+{% set favicon = url ~ '/tpl/favicon_' ~ webstoreConfig.webstoreId ~ '.ico' %}
+<link rel="icon" type="img/ico" href="{{ favicon }}">
+
+{% set requestUrl = webstoreConfig.domainSsl ~ request.getRequestUri() %}
+{% set canonicalUrl = services.url.getCanonicalURL() %}
+{% set languageUrls = services.url.getLanguageURLs() %}
+
+{% if canonicalUrl is not null %}
+    <link rel="canonical" href="{{ canonicalUrl }}">
+{% endif %}
+
+{% if canonicalUrl == requestUrl %}
+    {% for language, url in languageUrls %}
+        <link rel="alternate" hreflang="{{language}}" href="{{url}}"/>
+    {% endfor %}
+{% endif %}
+
+{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+
+{% set logData = config("Ceres.log.data")|split(', ') %}
+{% set sortValues = config("Ceres.sort.data")|split(', ') %}
+{% set defaultSorting = config('Ceres.sort.defaultSorting') %}
+{% set defaultSortingSearch = config('Ceres.sort.defaultSortingSearch') %}
+{% set rowsPerPage = config('Ceres.pagination.rowsPerPage') | split(', ') %}
+{% set columnsPerPage = config('Ceres.pagination.columnsPerPage') %}
+{% set itemsPerPage = rowsPerPage[0] * columnsPerPage %}
+{% set performanceLevel = config('Ceres.log.performance.level') %}
+{% set itemName = config('Ceres.item.name') %}
+<!-- CSS asyncron laden -->
+<script>
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+function loadCSS( href, before, media ){
+  "use strict";
+  // Arguments explained:
+  // `href` is the URL for your CSS file.
+  // `before` optionally defines the element we'll use as a reference for injecting our <link>
+  // By default, `before` uses the first <script> element in the page.
+  // However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+  // If so, pass a different reference element to the `before` argument and it'll insert before that instead
+  // note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+
+  // DELETE OLD STYLESHEET IF IT ALREADY EXISTS
+  var current_ss = window.document.getElementsByTagName( "link" );
+  for ( var i = 0, ss; ss = current_ss[i]; i++ ) {
+    if ( ss.getAttribute( "href" ) === href ) {
+      ss.remove();
+    }
+  }
+
+  // ADD THE NEW STYLESHEET
+  var ss = window.document.createElement( "link" );
+  var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+  ss.rel = "stylesheet";
+  ss.href = href;
+  // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+  ss.media = "only x";
+  // inject link
+  ref.parentNode.insertBefore( ss, ref );
+  // set media back to `all` so that the styleshet applies once it loads
+  setTimeout( function(){
+    ss.media = media || "all";
+  } );
+}
+</script>
+<!-- End CSS asyncron laden -->
+{% if LayoutContainer.show("Ceres::Template.StyleOverwrite") | trim is empty %}
+    <!-- link rel="stylesheet" href="{{ plugin_path('Ceres') }}/css/ceres.css" -->
+    <!-- link rel="preload" href="{{ plugin_path('Ceres') }}/css/ceres.css" as="style" onload="this.rel='stylesheet'" -->
+{% endif %}
+
+{{ LayoutContainer.show("Ceres::Template.StyleOverwrite") }}
+
+<!-- Extend the existing style with a template -->
+{{ LayoutContainer.show("Ceres::Template.Style") }}
