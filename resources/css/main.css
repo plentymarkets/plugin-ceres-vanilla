@@ -31,7 +31,7 @@ a {
 	max-width: 130px;
 }
 .top-bar {
-    background-color: #1b1b1b;
+    background-color: #1b1b1b!important;
 }
 .wrapper-main .navbar {
 	background: #ffffff;
