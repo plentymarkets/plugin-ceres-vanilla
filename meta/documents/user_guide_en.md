@@ -31,7 +31,7 @@ After **installing** and **deploying** the plugin, you can enter your own CSS in
 2. Click on **CeresVanilla**.<br /> → The plugin will open.
 3. Click on **Files » resources » views » Homepage » Homepage.twig** in the directory tree.
 4. Enter the code for your homepage.  
-7. **Save** the settings.<br /> → The template changes will be available after deploying the plugin again.
+5. **Save** the settings.<br /> → The template changes will be available after deploying the plugin again.
 
 ##### Activating your own homepage:
 
@@ -40,7 +40,28 @@ After **installing** and **deploying** the plugin, you can enter your own CSS in
 2. Click on **CeresVanilla**.<br /> → The plugin will open.
 3. Click on **Configuration** in the directory tree.
 4. Activate **Homepage** under **Override partials and templates**.  
-7. **Save** the settings.<br /> → The homepage will be displayed.
+5. **Save** the settings.<br /> → The homepage will be displayed.
+
+## Using your own data fields
+
+**CeresVanilla** allows you to override the data fields of Ceres and extend the result fieldson different pages, such as the shopping cart, the category view, the single item view, etc. with your own data. In the following, editing the data fields of the single item view is explained. Set up the other pages the same way.
+
+##### Editing the data fields of the single item view:
+
+1. Go to **Plugins » Plugin overview**.<br /> → The plugin overview will open.
+2. Click on **CeresVanilla**.<br /> → The plugin will open.
+3. Click on **Files » resources » views » ResultFields » SingleItem.fields.json** in the directory tree.
+4. Add other data fields.  
+5. **Save** the settings.<br /> → The changes will be available after deploying the plugin again.
+
+
+##### Activating your own data fields:
+
+1. Go to **Plugins » Plugin overview**.<br /> → The plugin overview will open.
+2. Click on **CeresVanilla**.<br /> → The plugin will open.
+3. Click on **Configuration** in the directory tree.
+4. Activate **Item data of the single item view** under **Override result fields**.  
+5. **Save** the settings.<br /> → Your own data fields will be activated on the single item view.
 
 ## License
 

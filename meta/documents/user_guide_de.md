@@ -41,6 +41,26 @@ Nach **Installation** und **Bereitstellung** des Plugins geben Sie Ihr eigenes C
 4. Aktivieren Sie **Homepage** unter **Override partials and templates**.
 5. **Speichern** Sie die Einstellungen.<br /> → Die Startseite wird angezeigt.
 
+## Eigene Datenfelder verwenden
+
+**CeresVanilla** ermöglicht es Ihnen die Datenfelder von Ceres zu überschreiben und die vorhandenen Daten um eigene Daten auf verschiedenen Seiten wie Warenkorb, Kategorieansicht, Einzelansicht des Artikels, etc. zu erweitern. Dies wird nachfolgend am Beispiel der Artikelseite erklärt. Richten Sie andere Seiten analog ein.
+
+##### Datenfelder der Artikelseite anpassen:
+
+1. Öffnen Sie das Menü **Plugins » Plugin-Übersicht**.<br /> → Die Plugin-Übersicht wird geöffnet.
+2. Klicken Sie auf **CeresVanilla**.<br /> → Das Plugin wird geöffnet.
+3. Klicken Sie im Verzeichnisbaum auf **Dateien » resources » views » ResultFields » SingleItem.fields.json**.
+4. Fügen Sie weitere Datenfelder hinzu.
+5. **Speichern** Sie die Einstellungen.<br /> → Die Anpassungen werden nach der nächsten **Plugin-Bereitstellung** verfügbar.
+
+##### Eigene Datenfelder aktivieren:
+
+1. Öffnen Sie das Menü **Plugins » Plugin-Übersicht**.<br /> → Die Plugin-Übersicht wird geöffnet.
+2. Klicken Sie auf **CeresVanilla**.<br /> → Das Plugin wird geöffnet.
+3. Klicken Sie im Verzeichnisbaum auf **Konfiguration » Result fields**.
+4. Aktivieren Sie **Item data of the single item view** unter **Override result fields**.
+5. **Speichern** Sie die Einstellungen.<br /> → Ihre eigenen Datenfelder werden für die Artikelansicht aktiviert.
+
 ## Lizenz
 
 Das gesamte Projekt unterliegt der GNU AFFERO GENERAL PUBLIC LICENSE – weitere Informationen finden Sie in der [LICENSE](https://github.com/plentymarkets/plugin-ceres-vanilla/blob/master/LICENSE).
