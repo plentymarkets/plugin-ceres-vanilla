@@ -290,7 +290,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
         if (in_array("auto_complete_list_item", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
 
-          $eventDispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
+          $dispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'Ceres::ResultFields.AutoCompleteListItem');
           });
@@ -300,9 +300,9 @@ class CeresVanillaServiceProvider extends ServiceProvider
         if (in_array("basket_item", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
 
-          $eventDispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
+          $dispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
           {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_LIST, 'Ceres::ResultFields.BasketItem');
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_ITEM, 'Ceres::ResultFields.BasketItem');
           });
         }
 
@@ -310,7 +310,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
         if (in_array("category_tree", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
 
-          $eventDispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
+          $dispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'Ceres::ResultFields.CategoryTree');
           });
@@ -320,7 +320,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
         if (in_array("list_item", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
 
-          $eventDispatcher->listen( 'IO.ResultFields.ListItem', function(ResultFieldTemplate $templateContainer)
+          $dispatcher->listen( 'IO.ResultFields.ListItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'Ceres::ResultFields.ListItem');
           });
@@ -330,7 +330,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
         if (in_array("single_item", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
 
-          $eventDispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
+          $dispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Ceres::ResultFields.SingleItem');
           });
