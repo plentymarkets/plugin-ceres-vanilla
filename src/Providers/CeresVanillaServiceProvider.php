@@ -332,7 +332,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
 
           $eventDispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
           {
-              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Ceres::ResultFields.SingleItem',);
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Ceres::ResultFields.SingleItem');
           });
         }
     }
