@@ -293,7 +293,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
           $eventDispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'Ceres::ResultFields.AutoCompleteListItem');
-          }
+          });
         }
 
         // Override basket item result fields
@@ -303,7 +303,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
           $eventDispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_LIST, 'Ceres::ResultFields.BasketItem');
-          }
+          });
         }
 
         // Override category tree result fields
@@ -313,7 +313,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
           $eventDispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'Ceres::ResultFields.CategoryTree');
-          }
+          });
         }
 
         // Override list item result fields
@@ -323,7 +323,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
           $eventDispatcher->listen( 'IO.ResultFields.ListItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'Ceres::ResultFields.ListItem');
-          }
+          });
         }
 
         // Override single item view result fields
@@ -333,7 +333,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
           $eventDispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
           {
               $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Ceres::ResultFields.SingleItem',);
-          }
+          });
         }
     }
 }
