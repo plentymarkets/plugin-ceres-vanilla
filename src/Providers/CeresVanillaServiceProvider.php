@@ -10,6 +10,7 @@ use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
 use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
 
 
@@ -159,7 +160,7 @@ class CeresVanillaServiceProvider extends ServiceProvider
 
             $dispatcher->listen('IO.tpl.item', function (TemplateContainer $container)
             {
-                $container->setTemplate('CeresVanilla::Item.SingleItem');
+                $container->setTemplate('CeresVanilla::Item.SingleItemView');
                 return false;
             }, self::PRIORITY);
         }
@@ -186,6 +187,28 @@ class CeresVanillaServiceProvider extends ServiceProvider
             }, self::PRIORITY);
         }
 
+        // Override wish list
+        if (in_array("wish_list", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+            $dispatcher->listen('IO.tpl.wish-list', function (TemplateContainer $container)
+            {
+                $container->setTemplate('CeresVanilla::WishList.WishListView');
+                return false;
+            }, self::PRIORITY);
+        }
+
+        // Override contact page
+        if (in_array("contact", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+            $dispatcher->listen('IO.tpl.contact', function (TemplateContainer $container)
+            {
+                $container->setTemplate('CeresVanilla::Customer.Contact');
+                return false;
+            }, self::PRIORITY);
+        }
+
         // Override cancellation rights
         if (in_array("cancellation_rights", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
@@ -193,6 +216,17 @@ class CeresVanillaServiceProvider extends ServiceProvider
             $dispatcher->listen('IO.tpl.cancellation-rights', function (TemplateContainer $container)
             {
                 $container->setTemplate('CeresVanilla::StaticPages.CancellationRights');
+                return false;
+            }, self::PRIORITY);
+        }
+
+        // Override cancellation form
+        if (in_array("cancellation_form", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+            $dispatcher->listen('IO.tpl.cancellation-form', function (TemplateContainer $container)
+            {
+                $container->setTemplate('CeresVanilla::StaticPages.CancellationForm');
                 return false;
             }, self::PRIORITY);
         }
@@ -251,6 +285,55 @@ class CeresVanillaServiceProvider extends ServiceProvider
                 return false;
             }, self::PRIORITY);
         }
+
+        // Override auto complete list item result fields
+        if (in_array("auto_complete_list_item", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+          $eventDispatcher->listen( 'IO.ResultFields.AutoCompleteListItem', function(ResultFieldTemplate $templateContainer)
+          {
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_AUTOCOMPLETE_ITEM_LIST, 'Ceres::ResultFields.AutoCompleteListItem');
+          }
+        }
+
+        // Override basket item result fields
+        if (in_array("basket_item", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+          $eventDispatcher->listen( 'IO.ResultFields.BasketItem', function(ResultFieldTemplate $templateContainer)
+          {
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_BASKET_LIST, 'Ceres::ResultFields.BasketItem');
+          }
+        }
+
+        // Override category tree result fields
+        if (in_array("category_tree", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+          $eventDispatcher->listen( 'IO.ResultFields.CategoryTree', function(ResultFieldTemplate $templateContainer)
+          {
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_CATEGORY_TREE, 'Ceres::ResultFields.CategoryTree');
+          }
+        }
+
+        // Override list item result fields
+        if (in_array("list_item", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+          $eventDispatcher->listen( 'IO.ResultFields.ListItem', function(ResultFieldTemplate $templateContainer)
+          {
+              $templateContainer->setTemplate(ResultFieldTemplate::ResultFieldTemplate::TEMPLATE_LIST_ITEM, 'Ceres::ResultFields.ListItem');
+          }
+        }
+
+        // Override single item view result fields
+        if (in_array("single_item", $enabledOverrides) || in_array("all", $enabledOverrides))
+        {
+
+          $eventDispatcher->listen( 'IO.ResultFields.SingleItem', function(ResultFieldTemplate $templateContainer)
+          {
+              $templateContainer->setTemplate(ResultFieldTemplate::TEMPLATE_SINGLE_ITEM, 'Ceres::ResultFields.SingleItem',);
+          }
+        }
     }
 }
-

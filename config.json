@@ -19,7 +19,10 @@
             "item"                      : "Single item view",
             "category_view"             : "Category item view",
             "my_account"                : "My account",
+            "wish_list "                : "Wish list",
+            "contact   "                : "Contact",
             "cancellation_rights"       : "Cancellation rights",
+            "cancellation_form  "       : "Cancellation form",
             "legal_disclosure"          : "Legal disclosure",
             "privacy_policy"            : "Privacy policy",
             "terms_conditions"          : "Terms and conditions",
@@ -27,6 +30,21 @@
             "page_not_found"            : "Page not found",
             "category_content"          : "Content category template",
             "category_item"             : "Item category template"
+        },
+        "default"                       : ""
+    },
+    {
+        "tab"                           : "Result fields",
+        "key"                           : "result_fields.override",
+        "label"                         : "Override result fields",
+        "type"                          : "multi_select",
+        "possibleValues"                :
+        {
+            "auto_complete_list_item"   : "Item data of in the search (auto complete)",
+            "basket_item"               : "Item data of a basket item",
+            "category_tree"             : "Category data of the category tree",
+            "list_item"                 : "Item data of the item list",
+            "single_item"               : "Item data of the single item view",
         },
         "default"                       : ""
     }

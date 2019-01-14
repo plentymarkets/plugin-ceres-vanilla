@@ -1,5 +1,5 @@
 {
-    "version"           :   "0.0.1",
+    "version"           :   "0.0.3",
     "license"           :   "AGPL-3.0",
     "name"              :   "CeresVanilla",
     "marketplaceName"   :   {"de":"Ceres Vanilla","en":"Ceres Vanilla"},
@@ -15,7 +15,9 @@
     "price"             :   0,
     "categories"        :   [3518],
     "type"              :   "theme",
-    "require"           :   ["Ceres"],
+    "require"           :   {
+                                "Ceres":"~3.0"
+                            },
     "serviceProvider"   :   "CeresVanilla\\Providers\\CeresVanillaServiceProvider",
     "dataProviders"     :
     [
