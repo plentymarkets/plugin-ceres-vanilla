@@ -40,7 +40,7 @@
         "type"                          : "multi_select",
         "possibleValues"                :
         {
-            "auto_complete_list_item"   : "Item data of in the search (auto complete)",
+            "auto_complete_list_item"   : "Item data of the search (auto complete)",
             "basket_item"               : "Item data of a basket item",
             "category_tree"             : "Category data of the category tree",
             "list_item"                 : "Item data of the item list",
