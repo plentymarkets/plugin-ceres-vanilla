@@ -44,7 +44,7 @@
             "basket_item"               : "Item data of a basket item",
             "category_tree"             : "Category data of the category tree",
             "list_item"                 : "Item data of the item list",
-            "single_item"               : "Item data of the single item view",
+            "single_item"               : "Item data of the single item view"
         },
         "default"                       : ""
     }
