@@ -1,51 +1,151 @@
-[
-    {
-        "tab"                           : "Templates",
-        "key"                           : "templates.override",
-        "label"                         : "Override partials and templates",
-        "type"                          : "multi_select",
-        "possibleValues"                :
-        {
-            "page_design"               : "Page design",
-            "head"                      : "Head",
-            "header"                    : "Header",
-            "footer"                    : "Footer",
-            "homepage"                  : "Homepage",
-            "basket"                    : "Shopping cart",
-            "checkout"                  : "Checkout",
-            "order_confirmation"        : "Order confirmation",
-            "login"                     : "Login",
-            "register"                  : "Register",
-            "item"                      : "Single item view",
-            "category_view"             : "Category item view",
-            "my_account"                : "My account",
-            "wish_list"                 : "Wish list",
-            "contact"                   : "Contact",
-            "cancellation_rights"       : "Cancellation rights",
-            "cancellation_form"         : "Cancellation form",
-            "legal_disclosure"          : "Legal disclosure",
-            "privacy_policy"            : "Privacy policy",
-            "terms_conditions"          : "Terms and conditions",
-            "item_not_found"            : "Item not found",
-            "page_not_found"            : "Page not found",
-            "category_content"          : "Content category template",
-            "category_item"             : "Item category template"
+{
+    "formatVersion": 1,
+    "menu": {
+        "Config.TemplatesTab": {
+            "label": "Config.TemplatesTab",
+            "formFields": {
+                "templates.override": {
+                    "type": "multiCheckBox",
+                    "required": false,
+                    "label": "Config.templatesOverrideLabel",
+                    "options": {
+                        "defaultValue": "",
+                        "checkBoxValues": [
+                            {
+                                "value": "page_design",
+                                "caption": "Config.templatesOverridePossibleValuePageDesign"
+                            },
+                            {
+                                "value": "head",
+                                "caption": "Config.templatesOverridePossibleValueHead"
+                            },
+                            {
+                                "value": "header",
+                                "caption": "Config.templatesOverridePossibleValueHeader"
+                            },
+                            {
+                                "value": "footer",
+                                "caption": "Config.templatesOverridePossibleValueFooter"
+                            },
+                            {
+                                "value": "homepage",
+                                "caption": "Config.templatesOverridePossibleValueHomepage"
+                            },
+                            {
+                                "value": "basket",
+                                "caption": "Config.templatesOverridePossibleValueBasket"
+                            },
+                            {
+                                "value": "checkout",
+                                "caption": "Config.templatesOverridePossibleValueCheckout"
+                            },
+                            {
+                                "value": "order_confirmation",
+                                "caption": "Config.templatesOverridePossibleValueOrderConfirmation"
+                            },
+                            {
+                                "value": "login",
+                                "caption": "Config.templatesOverridePossibleValueLogin"
+                            },
+                            {
+                                "value": "register",
+                                "caption": "Config.templatesOverridePossibleValueRegister"
+                            },
+                            {
+                                "value": "item",
+                                "caption": "Config.templatesOverridePossibleValueItem"
+                            },
+                            {
+                                "value": "category_view",
+                                "caption": "Config.templatesOverridePossibleValueCategoryView"
+                            },
+                            {
+                                "value": "my_account",
+                                "caption": "Config.templatesOverridePossibleValueMyAccount"
+                            },
+                            {
+                                "value": "wish_list",
+                                "caption": "Config.templatesOverridePossibleValueWishList"
+                            },
+                            {
+                                "value": "contact",
+                                "caption": "Config.templatesOverridePossibleValueContact"
+                            },
+                            {
+                                "value": "cancellation_rights",
+                                "caption": "Config.templatesOverridePossibleValueCancellationRights"
+                            },
+                            {
+                                "value": "cancellation_form",
+                                "caption": "Config.templatesOverridePossibleValueCancellationForm"
+                            },
+                            {
+                                "value": "legal_disclosure",
+                                "caption": "Config.templatesOverridePossibleValueLegalDisclosure"
+                            },
+                            {
+                                "value": "privacy_policy",
+                                "caption": "Config.templatesOverridePossibleValuePrivacyPolicy"
+                            },
+                            {
+                                "value": "terms_conditions",
+                                "caption": "Config.templatesOverridePossibleValueTermsConditions"
+                            },
+                            {
+                                "value": "item_not_found",
+                                "caption": "Config.templatesOverridePossibleValueItemNotFound"
+                            },
+                            {
+                                "value": "page_not_found",
+                                "caption": "Config.templatesOverridePossibleValuePageNotFound"
+                            },
+                            {
+                                "value": "category_content",
+                                "caption": "Config.templatesOverridePossibleValueCategoryContent"
+                            },
+                            {
+                                "value": "category_item",
+                                "caption": "Config.templatesOverridePossibleValueCategoryItem"
+                            }
+                        ]
+                    }
+                }
+            }
         },
-        "default"                       : ""
-    },
-    {
-        "tab"                           : "Result fields",
-        "key"                           : "result_fields.override",
-        "label"                         : "Override result fields",
-        "type"                          : "multi_select",
-        "possibleValues"                :
-        {
-            "auto_complete_list_item"   : "Item data of the auto-complete search",
-            "basket_item"               : "Item data of the shopping cart",
-            "category_tree"             : "Category data of the category tree",
-            "list_item"                 : "Item data of the item list",
-            "single_item"               : "Item data of the single item view"
-        },
-        "default"                       : ""
+        "Config.ResultFieldsTab": {
+            "label": "Config.ResultFieldsTab",
+            "formFields": {
+                "result_fields.override": {
+                    "type": "multiCheckBox",
+                    "required": false,
+                    "label": "Config.resultFieldsOverrideLabel",
+                    "options": {
+                        "defaultValue": "",
+                        "checkBoxValues": [
+                            {
+                                "value": "auto_complete_list_item",
+                                "caption": "Config.resultFieldsOverridePossibleValueAutoCompleteListItem"
+                            },
+                            {
+                                "value": "basket_item",
+                                "caption": "Config.resultFieldsOverridePossibleValueBasketItem"
+                            },
+                            {
+                                "value": "category_tree",
+                                "caption": "Config.resultFieldsOverridePossibleValueCategoryTree"
+                            },
+                            {
+                                "value": "list_item",
+                                "caption": "Config.resultFieldsOverridePossibleValueListItem"
+                            },
+                            {
+                                "value": "single_item",
+                                "caption": "Config.resultFieldsOverridePossibleValueSingleItem"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     }
-]
+}

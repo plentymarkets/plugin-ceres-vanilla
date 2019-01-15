@@ -1,0 +1,8 @@
+{
+    "marketplaceName"   : {"de":"Ceres Vanilla","en":"Ceres Vanilla"},
+    "license"           : "AGPL-3.0",
+    "price"             : 0.00,
+    "shortDescription"  : { "de": "Ein Vanilla-Theme für Ceres.", "en": "A Vanilla theme for Ceres." },
+    "categories"        : ["3518"],
+    "keywords"          : ["plentymarkets", "plugins", "layout", "theme", "ceres"]
+}

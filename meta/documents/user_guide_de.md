@@ -37,13 +37,13 @@ Nach **Installation** und **Bereitstellung** des Plugins geben Sie Ihr eigenes C
 
 1. Öffnen Sie das Menü **Plugins » Plugin-Übersicht**.<br /> → Die Plugin-Übersicht wird geöffnet.
 2. Klicken Sie auf **CeresVanilla**.<br /> → Das Plugin wird geöffnet.
-3. Klicken Sie im Verzeichnisbaum auf **Konfiguration**.
-4. Aktivieren Sie **Homepage** unter **Override partials and templates**.
+3. Klicken Sie im Verzeichnisbaum auf **Konfiguration » Templates**.
+4. Aktivieren Sie **Startseite** unter **Partials und Templates überschreiben**.
 5. **Speichern** Sie die Einstellungen.<br /> → Die Startseite wird angezeigt.
 
 ## Eigene Datenfelder verwenden
 
-**CeresVanilla** ermöglicht es Ihnen die Datenfelder von Ceres zu überschreiben und die vorhandenen Daten um eigene Daten auf verschiedenen Seiten wie Warenkorb, Kategorieansicht, Einzelansicht des Artikels, etc. zu erweitern. Dies wird nachfolgend am Beispiel der Artikelseite erklärt. Richten Sie andere Seiten analog ein.
+**CeresVanilla** ermöglicht es Ihnen die Datenfelder von Ceres zu überschreiben und die vorhandenen Daten um eigene Daten auf verschiedenen Seiten wie Warenkorb, Kategorieansicht, Artikelansicht, etc. zu erweitern. Dies wird nachfolgend am Beispiel der Artikelseite erklärt. Richten Sie andere Seiten analog ein.
 
 ##### Datenfelder der Artikelseite anpassen:
 
@@ -57,8 +57,8 @@ Nach **Installation** und **Bereitstellung** des Plugins geben Sie Ihr eigenes C
 
 1. Öffnen Sie das Menü **Plugins » Plugin-Übersicht**.<br /> → Die Plugin-Übersicht wird geöffnet.
 2. Klicken Sie auf **CeresVanilla**.<br /> → Das Plugin wird geöffnet.
-3. Klicken Sie im Verzeichnisbaum auf **Konfiguration » Result fields**.
-4. Aktivieren Sie **Item data of the single item view** unter **Override result fields**.
+3. Klicken Sie im Verzeichnisbaum auf **Konfiguration » Datenfelder**.
+4. Aktivieren Sie **Artikeldaten der Artikelansicht** unter **Datenfelder überschreiben**.
 5. **Speichern** Sie die Einstellungen.<br /> → Ihre eigenen Datenfelder werden für die Artikelansicht aktiviert.
 
 ## Lizenz
