@@ -4,7 +4,7 @@
 
 # CeresVanilla
 
-A Vanilla theme for Ceres.
+A Vanilla theme for Ceres 2 or lower versions. If you are looking for a basic theme for Ceres 3, use [CeresCoconut](https://github.com/plentymarkets/plugin-ceres-coconut/) instead.
 
 
 ## Requirements
